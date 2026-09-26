@@ -2,7 +2,7 @@
 /**
  * Plugin Name: SMM Desk List
  * Description: Receives the list from the app and prints it with [smm_list].
- * Version: 1.9.0
+ * Version: 1.9.1
  */
 
 if (!defined('ABSPATH')) {
@@ -479,8 +479,9 @@ function smm_desk_list_css() {
         . '.smm-desk-thumb{width:var(--smm-thumb);height:var(--smm-thumb);border-radius:999px;object-fit:cover;flex:none}'
         . '.smm-desk-badge{width:var(--smm-thumb);height:var(--smm-thumb);margin:0;display:inline-flex;align-items:center;justify-content:center;padding:0;border-radius:999px;position:relative;overflow:hidden;flex:none;font-size:0;letter-spacing:0;text-transform:none;box-shadow:0 1px 1px rgba(0,0,0,.22),0 5px 10px rgba(0,0,0,.16),0 12px 20px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.78),inset 0 -2px 4px rgba(0,0,0,.12)}'
         . '.smm-desk-badge::after{content:"";position:absolute;top:6%;left:16%;width:68%;height:38%;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.55),transparent);pointer-events:none}'
-        . '.smm-desk-badge svg,.smm-desk-mark{position:relative;z-index:1}'
-        . '.smm-desk-mark{font:800 11px/1 system-ui,sans-serif;letter-spacing:-0.04em}.smm-desk-logo{position:relative;z-index:1;width:78%;height:78%;object-fit:contain}'
+        . '.smm-desk .smm-desk-badge svg,.smm-desk .smm-desk-mark{position:relative;z-index:1}'
+        . '.smm-desk .smm-desk-mark{font:800 11px/1 system-ui,sans-serif;letter-spacing:-0.04em}'
+        . '.smm-desk .smm-desk-badge .smm-desk-logo,.smm-desk .smm-desk-badge svg{position:relative;z-index:1;width:78%!important;height:78%!important;max-width:none!important;max-height:none!important;min-width:0;object-fit:contain;display:block!important}'
         . '.smm-desk-title{min-width:0;width:100%;white-space:normal;text-align:center;font-weight:700;letter-spacing:0;text-transform:none}'
         . '.smm-desk-block{display:flex;flex-direction:column;gap:8px;min-width:0}'
         . '.smm-desk-sub{display:flex;flex-direction:column;gap:8px;margin-left:18px}'
